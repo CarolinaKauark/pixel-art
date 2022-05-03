@@ -4,30 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Project Pixels Art</title>
 </head>
 <body>
     <header>
-        <h1 id="title">Paleta de Cores</h1>
+        <h1 id="title">Pixel art</h1>
     </header>
     <section id="color-palette">
     </section>
     <section id="input-tam">
-        <label for="board-size">Tamanho do quadro: </label>
-        <input type="number"
+        <span for="board-size">Tamanho do quadro: </span>
+        <div>
+            <input type="number"
           id="board-size"
           min=1
           max=50
-          placeholder="Escreva o tamanho do quadro"
-        >
-        <button id="generate-board">VQV</button>
+          placeholder="Escolha o tamanho do quadro">
+        <button id="generate-board">Enter</button>
+        </div>
     </section>
-    
-    <button id="clear-board">Limpar</button>
     <section id="pixel-board"></section>
+    <button id="clear-board">Limpar</button>
     <footer>
-        <h2>Projeto feito por Carolina Kauark para o curso da Trybe!</h2>
+        <h2>Projeto feito por Carolina Kauark para o curso da Trybe</h2>
     </footer>
     <script src="script.js"></script>
 </body>

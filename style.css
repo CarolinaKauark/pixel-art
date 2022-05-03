@@ -1,21 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: #ffffff url('2.png') repeat right top;
+  background: #ffffff url('star.jpg') repeat right top;
   margin: 0px;
 
 }
 
 h1 {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: 'VT323', monospace;
   text-justify: center;
   font-size: 40px;
-  color: black;
+  color: white;
 }
 
 .color {
-  border: 1px solid black;
+  border: 1px solid white;
   height: 40px;
   width: 40px;
 }
@@ -23,20 +24,21 @@ h1 {
 #color-palette {
   display: flex;
   flex-direction: row;
-  width: 40%;
+  min-width: 20%;
   justify-content: space-between;
   padding: 20px 0px;
 }
 
 
-label {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+span {
+  font-family: 'monospace';
   font-size: 20px;
   padding-bottom: 20px;
-  color: black;
+  color: white;
 }
 
 input {
+  margin: 10px 0px 20px 0px;
   min-width: 200px;
 }
 
@@ -51,29 +53,50 @@ input {
   flex-direction: row;
 }
 
+#generate-board, #clear-board {
+  background-color: darkblue;
+  border: none;
+  font-family: monospace;
+  color: white;
+}
+
+#generate-board {
+  padding: 2px;
+  border: 1px solid white;
+}
+
 #pixel-board {
   padding-top: 10px;
-  margin-bottom: 60px;
+  margin-bottom: 10px;
+}
+
+#board-size {
+  background-color: white;
 }
 
 #clear-board {
   margin-top: 10px;
+  margin-bottom: 60px;
+  padding: 10px;
+  border: 1px solid white;
 }
 
 footer {
-  background-color: #ffffff;
+  background-color: black;
   width: 100%;
   display: flex;
   justify-content: center;
   position: fixed;
   bottom: 0;
   margin-top: 20px;
+  opacity: 0.5;
 }
 
 h2 {
   font-size: 16px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: 'monospace';
   text-justify: center;
+  color:  white;
 
 }
 
